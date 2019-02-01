@@ -1151,7 +1151,7 @@ h6:hover .anchor-link {
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Musician-Learn-To-Code:-Daily-Python-Challenge"&gt;Musician Learn To Code: Daily Python Challenge&lt;a class="anchor-link" href="#Musician-Learn-To-Code:-Daily-Python-Challenge"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="Is-it-a-Palindrome?"&gt;Is it a Palindrome?&lt;a class="anchor-link" href="#Is-it-a-Palindrome?"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The parameters of this problem are simple. We are going to take an input consisting of letters (a 'string'). These letters will be lowercase, and will not have any spaces between them.&lt;/p&gt;
+&lt;h1 id="Daily-Python-Challenge-#1"&gt;Daily Python Challenge #1&lt;a class="anchor-link" href="#Daily-Python-Challenge-#1"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;h3 id="Is-it-a-Palindrome?"&gt;Is it a Palindrome?&lt;a class="anchor-link" href="#Is-it-a-Palindrome?"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The parameters of this problem are simple. We are going to take an input consisting of letters (a 'string'). These letters will be lowercase, and will not have any spaces between them.&lt;/p&gt;
 &lt;p&gt;We are then going to check to see if this string is a Palindrome (a word, phrase, or sequence that reads the same backward as forward).&lt;/p&gt;
 &lt;p&gt;Our program will take an &lt;b&gt;input&lt;/b&gt;, and will return to us an &lt;b&gt;output&lt;/b&gt; in the form of a True or False statement.&lt;/p&gt;
 
@@ -1160,20 +1160,16 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[15]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# These strings will be our example inputs to test the program with. Which are Palindromes, and which are not?&lt;/span&gt;
-
-&lt;span class="n"&gt;string1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aabaa&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# True&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;string1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aabaa&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# True&lt;/span&gt;
 &lt;span class="n"&gt;string2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abac&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# False&lt;/span&gt;
 &lt;span class="n"&gt;string3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;tritone&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# False&lt;/span&gt;
 
-&lt;span class="c1"&gt;# We will create a function which we will later call to solve this problem for us.&lt;/span&gt;
-
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
             
             &lt;span class="n"&gt;first_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt;
             &lt;span class="n"&gt;last_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt;
@@ -1181,8 +1177,6 @@ h6:hover .anchor-link {
             &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;first_index&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;last_index&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
                 &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;
-        
-&lt;span class="c1"&gt;# Here we are calling our function &amp;#39;isPalindrome&amp;#39; with the argument matching our example strings.&lt;/span&gt;
 
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -1217,20 +1211,77 @@ False
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The most useful piece of advice that I've come across so far is that a programing language is just that - &lt;i&gt;a language&lt;/i&gt;. The way I approach a problem is to explain how to solve it, logically, step by step in ENGLISH (or Russian). After this, I translate these steps into Python.&lt;/p&gt;
+&lt;h4 id="The-most-useful-piece-of-advice-that-I've-come-across-so-far-is-that-a-programing-language-is-just-that---a-language.-The-way-I-approach-a-problem-is-to-explain-how-to-solve-it,-logically,-step-by-step-in-English-(or-Russian).-After-this,-I-translate-these-steps-into-Python."&gt;The most useful piece of advice that I've come across so far is that a programing language is just that - &lt;i&gt;a language&lt;/i&gt;. The way I approach a problem is to explain how to solve it, logically, step by step in English (or Russian). After this, I translate these steps into Python.&lt;a class="anchor-link" href="#The-most-useful-piece-of-advice-that-I've-come-across-so-far-is-that-a-programing-language-is-just-that---a-language.-The-way-I-approach-a-problem-is-to-explain-how-to-solve-it,-logically,-step-by-step-in-English-(or-Russian).-After-this,-I-translate-these-steps-into-Python."&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;To solve this problem, I did exactly that.&lt;/p&gt;
+&lt;p&gt;If I were isntructing someone on how to find a Palindrome, I would ask them to match the first and last letters, if they are the same, I could ask them to move inwards, and match those two. So on and so forth.&lt;/p&gt;
+&lt;p&gt;If one of these pairs is not a match, the string is not a palindrome. If the person gets to a letter in the middle that does not have a pair (in the case of a string with an odd number of words), then they are done, as that letter can exist in the middle and not change anything.&lt;/p&gt;
+&lt;p&gt;Here is the same solution, commented with my thought process:&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# These strings will be our example inputs to test the program with. Which are Palindromes, and which are not?&lt;/span&gt;
+
+&lt;span class="n"&gt;string1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;aabaa&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# True&lt;/span&gt;
+&lt;span class="n"&gt;string2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abac&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# False&lt;/span&gt;
+&lt;span class="n"&gt;string3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;tritone&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# False&lt;/span&gt;
+
+&lt;span class="c1"&gt;# We will create a function which we will later call to solve this problem for us.&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+        &lt;span class="c1"&gt;# The number of &amp;#39;offsets&amp;#39; that we will need to go through when matching our pairs.&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="c1"&gt;# The range includes the first argument, and excludes the second ...&lt;/span&gt;
+                                                 &lt;span class="c1"&gt;# For instance: range(0,4) goes through 0,1,2,3.&lt;/span&gt;
+            &lt;span class="n"&gt;first_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="c1"&gt;# the first letter, moving inwards for each step of &amp;#39;offset&amp;#39;&lt;/span&gt;
+            &lt;span class="n"&gt;last_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="c1"&gt;# the last letter, moving inwards for each step of &amp;#39;offset&amp;#39;&lt;/span&gt;
+            
+            &lt;span class="c1"&gt;# In each offset step, we are checking if these two letters match, if not, our function returns False&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;first_index&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;inputstring&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;last_index&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+                &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;
+            
+        &lt;span class="c1"&gt;# Otherwise, we return True!&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;
+        
+&lt;span class="c1"&gt;# Here we are calling our function &amp;#39;isPalindrome&amp;#39; with the argument matching our example strings.&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;isPalindrome&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;True
+False
+False
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 

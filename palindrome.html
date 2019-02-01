@@ -1185,7 +1185,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Musician-Learn-To-Code:-Daily-Python-Challenge">Musician Learn To Code: Daily Python Challenge<a class="anchor-link" href="#Musician-Learn-To-Code:-Daily-Python-Challenge">&#182;</a></h1><h3 id="Is-it-a-Palindrome?">Is it a Palindrome?<a class="anchor-link" href="#Is-it-a-Palindrome?">&#182;</a></h3><p>The parameters of this problem are simple. We are going to take an input consisting of letters (a 'string'). These letters will be lowercase, and will not have any spaces between them.</p>
+<h1 id="Daily-Python-Challenge-#1">Daily Python Challenge #1<a class="anchor-link" href="#Daily-Python-Challenge-#1">&#182;</a></h1><h3 id="Is-it-a-Palindrome?">Is it a Palindrome?<a class="anchor-link" href="#Is-it-a-Palindrome?">&#182;</a></h3><p>The parameters of this problem are simple. We are going to take an input consisting of letters (a 'string'). These letters will be lowercase, and will not have any spaces between them.</p>
 <p>We are then going to check to see if this string is a Palindrome (a word, phrase, or sequence that reads the same backward as forward).</p>
 <p>Our program will take an <b>input</b>, and will return to us an <b>output</b> in the form of a True or False statement.</p>
 
@@ -1194,20 +1194,16 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># These strings will be our example inputs to test the program with. Which are Palindromes, and which are not?</span>
-
-<span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;aabaa&quot;</span> <span class="c1"># True</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;aabaa&quot;</span> <span class="c1"># True</span>
 <span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;abac&quot;</span> <span class="c1"># False</span>
 <span class="n">string3</span> <span class="o">=</span> <span class="s2">&quot;tritone&quot;</span> <span class="c1"># False</span>
 
-<span class="c1"># We will create a function which we will later call to solve this problem for us.</span>
-
 <span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">inputstring</span><span class="p">):</span>
 
-        <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">inputstring</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">inputstring</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">):</span>
             
             <span class="n">first_index</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">+</span> <span class="n">o</span>
             <span class="n">last_index</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inputstring</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">o</span>
@@ -1215,8 +1211,6 @@ h6:hover .anchor-link {
             <span class="k">if</span> <span class="n">inputstring</span><span class="p">[</span><span class="n">first_index</span><span class="p">]</span> <span class="o">!=</span> <span class="n">inputstring</span><span class="p">[</span><span class="n">last_index</span><span class="p">]:</span>
                 <span class="k">return</span> <span class="kc">False</span>
         <span class="k">return</span> <span class="kc">True</span>
-        
-<span class="c1"># Here we are calling our function &#39;isPalindrome&#39; with the argument matching our example strings.</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="n">string1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="n">string2</span><span class="p">))</span>
@@ -1251,20 +1245,77 @@ False
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The most useful piece of advice that I've come across so far is that a programing language is just that - <i>a language</i>. The way I approach a problem is to explain how to solve it, logically, step by step in ENGLISH (or Russian). After this, I translate these steps into Python.</p>
+<h4 id="The-most-useful-piece-of-advice-that-I've-come-across-so-far-is-that-a-programing-language-is-just-that---a-language.-The-way-I-approach-a-problem-is-to-explain-how-to-solve-it,-logically,-step-by-step-in-English-(or-Russian).-After-this,-I-translate-these-steps-into-Python.">The most useful piece of advice that I've come across so far is that a programing language is just that - <i>a language</i>. The way I approach a problem is to explain how to solve it, logically, step by step in English (or Russian). After this, I translate these steps into Python.<a class="anchor-link" href="#The-most-useful-piece-of-advice-that-I've-come-across-so-far-is-that-a-programing-language-is-just-that---a-language.-The-way-I-approach-a-problem-is-to-explain-how-to-solve-it,-logically,-step-by-step-in-English-(or-Russian).-After-this,-I-translate-these-steps-into-Python.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To solve this problem, I did exactly that.</p>
+<p>If I were isntructing someone on how to find a Palindrome, I would ask them to match the first and last letters, if they are the same, I could ask them to move inwards, and match those two. So on and so forth.</p>
+<p>If one of these pairs is not a match, the string is not a palindrome. If the person gets to a letter in the middle that does not have a pair (in the case of a string with an odd number of words), then they are done, as that letter can exist in the middle and not change anything.</p>
+<p>Here is the same solution, commented with my thought process:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># These strings will be our example inputs to test the program with. Which are Palindromes, and which are not?</span>
+
+<span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;aabaa&quot;</span> <span class="c1"># True</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;abac&quot;</span> <span class="c1"># False</span>
+<span class="n">string3</span> <span class="o">=</span> <span class="s2">&quot;tritone&quot;</span> <span class="c1"># False</span>
+
+<span class="c1"># We will create a function which we will later call to solve this problem for us.</span>
+
+<span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">inputstring</span><span class="p">):</span>
+
+        <span class="c1"># The number of &#39;offsets&#39; that we will need to go through when matching our pairs.</span>
+        <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">inputstring</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">):</span> <span class="c1"># The range includes the first argument, and excludes the second ...</span>
+                                                 <span class="c1"># For instance: range(0,4) goes through 0,1,2,3.</span>
+            <span class="n">first_index</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">+</span> <span class="n">o</span> <span class="c1"># the first letter, moving inwards for each step of &#39;offset&#39;</span>
+            <span class="n">last_index</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inputstring</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">o</span> <span class="c1"># the last letter, moving inwards for each step of &#39;offset&#39;</span>
+            
+            <span class="c1"># In each offset step, we are checking if these two letters match, if not, our function returns False</span>
+            <span class="k">if</span> <span class="n">inputstring</span><span class="p">[</span><span class="n">first_index</span><span class="p">]</span> <span class="o">!=</span> <span class="n">inputstring</span><span class="p">[</span><span class="n">last_index</span><span class="p">]:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+            
+        <span class="c1"># Otherwise, we return True!</span>
+        <span class="k">return</span> <span class="kc">True</span>
+        
+<span class="c1"># Here we are calling our function &#39;isPalindrome&#39; with the argument matching our example strings.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="n">string1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="n">string2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="n">string3</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+False
+False
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
