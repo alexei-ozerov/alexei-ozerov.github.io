@@ -1162,7 +1162,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[34]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sd"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
@@ -1214,9 +1214,7 @@ h6:hover .anchor-link {
             &lt;span class="n"&gt;remainders&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;F&amp;quot;&lt;/span&gt;
     
     &lt;span class="c1"&gt;# Present Results&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;remainders&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-        &lt;span class="n"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;remainders&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-        &lt;span class="n"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;answer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;remainders&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+    &lt;span class="n"&gt;answer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;remainders&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     
     &lt;span class="c1"&gt;# Print Result Results&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;The converted value in Hexadecimal is: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;answer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1238,25 +1236,12 @@ h6:hover .anchor-link {
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;Please input a decimal integer: 1128
-The converted value in Hexadecimal is: 48
+&lt;pre&gt;Please input a decimal integer: 12648430
+The converted value in Hexadecimal is: C0FFEE
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1292,7 +1277,7 @@ The converted value in Hexadecimal is: 48
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python coding learning"></category></entry><entry><title>Question Mark Challenge</title><link href="https://alexei-ozerov.github.io/question-mark.html" rel="alternate"></link><published>2019-02-06T13:38:00-05:00</published><updated>2019-02-06T13:38:00-05:00</updated><author><name>Alexei Ozerov</name></author><id>tag:alexei-ozerov.github.io,2019-02-06:/question-mark.html</id><summary type="html">&lt;p&gt;Coding challenge walkthrough based on 'for' loops ...&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="python conversion loops"></category></entry><entry><title>Question Mark Challenge</title><link href="https://alexei-ozerov.github.io/question-mark.html" rel="alternate"></link><published>2019-02-06T13:38:00-05:00</published><updated>2019-02-06T13:38:00-05:00</updated><author><name>Alexei Ozerov</name></author><id>tag:alexei-ozerov.github.io,2019-02-06:/question-mark.html</id><summary type="html">&lt;p&gt;Coding challenge walkthrough based on 'for' loops ...&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -2650,7 +2635,7 @@ True
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python coding learning"></category></entry><entry><title>Check Palindrome Challenge</title><link href="https://alexei-ozerov.github.io/palindrome.html" rel="alternate"></link><published>2019-02-01T14:08:00-05:00</published><updated>2019-02-01T14:08:00-05:00</updated><author><name>Alexei Ozerov</name></author><id>tag:alexei-ozerov.github.io,2019-02-01:/palindrome.html</id><summary type="html">&lt;p&gt;Small coding challenge walkthrough&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="python challenge"></category></entry><entry><title>Check Palindrome Challenge</title><link href="https://alexei-ozerov.github.io/palindrome.html" rel="alternate"></link><published>2019-02-01T14:08:00-05:00</published><updated>2019-02-01T14:08:00-05:00</updated><author><name>Alexei Ozerov</name></author><id>tag:alexei-ozerov.github.io,2019-02-01:/palindrome.html</id><summary type="html">&lt;p&gt;Small coding challenge walkthrough&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -3968,4 +3953,4 @@ False
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="python coding learning"></category></entry></feed>
+</content><category term="python coding learning challenge"></category></entry></feed>
