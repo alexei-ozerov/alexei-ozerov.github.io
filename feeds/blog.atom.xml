@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Alexei Ozerov | Music, Coding, Signal Processing - Blog</title><link href="https://alexei-ozerov.github.io/" rel="alternate"></link><link href="https://alexei-ozerov.github.io/feeds/blog.atom.xml" rel="self"></link><id>https://alexei-ozerov.github.io/</id><updated>2019-02-10T15:01:00-05:00</updated><entry><title>Hexadecimal Calulator</title><link href="https://alexei-ozerov.github.io/hexa-calc.html" rel="alternate"></link><published>2019-02-10T15:01:00-05:00</published><updated>2019-02-10T15:01:00-05:00</updated><author><name>Alexei Ozerov</name></author><id>tag:alexei-ozerov.github.io,2019-02-10:/hexa-calc.html</id><summary type="html">&lt;p&gt;A multipart project to create a hexadecimal converter ...&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Alexei Ozerov | Music, Coding, Signal Processing - Blog</title><link href="https://alexei-ozerov.github.io/" rel="alternate"></link><link href="https://alexei-ozerov.github.io/feeds/blog.atom.xml" rel="self"></link><id>https://alexei-ozerov.github.io/</id><updated>2019-02-10T15:01:00-05:00</updated><entry><title>Hexadecimal Calculator</title><link href="https://alexei-ozerov.github.io/hexa-calc.html" rel="alternate"></link><published>2019-02-10T15:01:00-05:00</published><updated>2019-02-10T15:01:00-05:00</updated><author><name>Alexei Ozerov</name></author><id>tag:alexei-ozerov.github.io,2019-02-10:/hexa-calc.html</id><summary type="html">&lt;p&gt;A multipart project to create a hexadecimal converter ...&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1459,10 +1459,10 @@ The converted value in Hexadecimal is: C0FFEE
 
  
  
-&lt;div id="c0290113-e92a-4f30-b875-6b3baffeaa64"&gt;&lt;/div&gt;
+&lt;div id="78ffa9dd-b007-4a33-9fac-ff7e16ca518d"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#c0290113-e92a-4f30-b875-6b3baffeaa64');
+var element = $('#78ffa9dd-b007-4a33-9fac-ff7e16ca518d');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "6bd617d3f3994d81940cbfb9a0f45bd5", "version_major": 2, "version_minor": 0}
@@ -1481,10 +1481,10 @@ var element = $('#c0290113-e92a-4f30-b875-6b3baffeaa64');
 
  
  
-&lt;div id="fa045994-3fcb-4ff7-8632-523e045a2a8f"&gt;&lt;/div&gt;
+&lt;div id="2686a6a9-461c-410a-a60b-d2bf142c94dc"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#fa045994-3fcb-4ff7-8632-523e045a2a8f');
+var element = $('#2686a6a9-461c-410a-a60b-d2bf142c94dc');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "ed6dbac2f0fc49b5ab94b872b8e6ec98", "version_major": 2, "version_minor": 0}
